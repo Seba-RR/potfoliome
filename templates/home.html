@@ -1,0 +1,475 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portafolio</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div class="idioma-es">
+        <div id="headerEs" class="container">
+            <div class="header-container inmovil">
+                <div class="logo">
+                    <img src="../static/tipo3.PNG" alt="logo">
+                </div>
+                <div class="len_button">
+                    <button id="changeEn">Change to English</button>
+                </div>
+                <div class="div-list">
+                    <ul class="h-list">
+                        <li><a href="#headerEs" class="no-change-color">Inicio</a></li>
+                        <li><a href="#aboutEs" class="no-change-color">Acerca de</a></li>
+                        <li><a href="#worksEs" class="no-change-color">Portafolio</a></li>
+                        <li><a href="#contactEs" class="no-change-color">Contacto</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="img-python">
+                <div class="style-text">
+                    <p class="text "> Desarrollador Backend </p>
+                    <h1 class="text-me"> Hola, soy <strong class="name_style">Sebastián</strong> <br> <strong class="name_style">Ramírez</strong> de Chile... </h1>
+                </div>
+            </div>
+        </div>
+        <div id="aboutEs" class="container">
+            <div>
+                <div class="row">
+                    <div class="image">
+                        <img class="imcontainer" src="../static/perfil.jpg" alt="profile pic">
+                    </div>
+                    <div class="about_me">
+                        <h1>Acerca de mí </h1>
+                        <p class="about_me_text"> 
+                            Soy un apasionado desarrollador web egresado en 2020, con más de 2 años de experiencia en la creación de soluciones robustas y eficientes. 
+                            Mi enfoque principal es el desarrollo Backend, y mi especialidad radica en el uso del framework Django, junto con un conjunto diverso de tecnologías complementarias. 
+                        </p>
+                        <p class="about_me_text">
+                            Durante mi trayectoria, he consolidado habilidades que me definen como trabajador incansable y persistente. Mi enfoque en la gestión de proyectos pequeños me ha permitido 
+                            demostrar mi destreza en la programación en Python y Java, siempre manteniendo altos estándares de calidad y eficiencia. Mis capacidades se extienden al manejo 
+                            experto de bases de datos, incluyendo PostgreSQL y MySql, así como a la fluidez en el control de versiones mediante GitHub.
+                        </p>
+                        <p class="about_me_text">
+                            Mi energía inagotable y mi naturaleza autodidacta me impulsan constantemente a explorar nuevas posibilidades y a asumir desafíos con determinación. 
+                            No solo sobresalgo como un emprendedor en solitario, sino que también poseo la habilidad de fomentar la formación de equipos altamente colaborativos. 
+                            Mi capacidad para mantener la calma en situaciones estresantes es un recurso valioso para garantizar el cumplimiento de objetivos dentro de plazos ajustados.
+                        </p>
+                        <p class="about_me_text">
+                            Busco un entorno donde pueda seguir cultivando mi crecimiento profesional, aportando tanto mi experiencia actual como mi incansable deseo de aprendizaje y mejora continua. 
+                            Mi objetivo primordial es contribuir de manera significativa al equipo y aportar soluciones que trasciendan los límites convencionales.
+                        </p>
+                        <div class="row_tabs">
+                            <p class="space_tabs"><a onclick="showTab('skillsEs')" class="tab active"><strong>Habilidades</strong></a></p>
+                            <p class="space_tabs"><a onclick="showTab('experienceEs')"  class="tab"><strong>Experiencia</strong></a></p>
+                            <p class="space_tabs"><a onclick="showTab('educationEs')" class="tab"><strong>Educación</strong></a></p>
+                        </div>
+                        <div id="skillsEs" class="tab-content" style="display: block;">
+                            <ul class="">
+                                <li><p> Django </p></li>
+                                <li><p> Python </p></li>
+                                <li><p> MySql </p></li>
+                                <li><p> PostgreSQL </p></li>
+                                <li><p> Html - CSS </p></li>
+                            </ul>
+                        </div>
+                        <div id="experienceEs" class="tab-content">
+                            <h3>Desarrollador Web. | <strong>Conectapi.</strong> Santiago, Chile</h3>
+                            <p>Desarrollo completo de una solución web tipo marketplace, definiendo la
+                                arquitectura, modelos y herramientas a utilizar. Se utilizó el framework
+                                Django, MySQL como base de datos, entre otras.
+                            </p>
+                            <h3>Desarrollador Backend. | <strong>TeNecesito.</strong> Santiago, Chile</h3>
+                            <p>Desarrollo Backend de una aplicación existente, tipo REST API, usando el
+                                framework Django, base de datos PostgreSQL. Algunas tareas relevantes
+                                fueron: integración con otras APIs, manejo de la base de datos y creación
+                                de nuevas funcionalidades.</p>
+                        </div>
+                        <div id="educationEs" class="tab-content">
+                            <h3>1. Licenciado en Ciencias de la Ingeniería</h3>
+                            <p>
+                                Pontificia Universidad Católica de Valparaíso | Mar 2014 - Mar 2019
+                            </p>
+                            <h3>2. Ingeniero Civil en Informática</h3>
+                            <p>
+                                Pontificia Universidad Catolica de Valparaiso | Mar 2014 - Dic 2020
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="worksEs" class="container">
+            <div class="works_list">
+                <div class="works_card">
+                    <img src="../static/python-django-2.png" alt="python_django_logo">
+                    <h2>Desarrollador Web.</h2>
+                    <div>
+                        <ul class="detail_list">
+                            <li>
+                                Estuve involucrado en la planificación del proyecto, para esto se uso 
+                                la técnica de estimación del tiempo de desarrollo Basada 
+                                en Casos de Uso. A partir de esto se tomo la decisión sobre que tecnologías
+                                se usarian para el desarrollo.
+                            </li>
+                            <li>
+                                Durante todo el desarrollo lo que se hizo fue usar Django para el backend
+                                y Html-Css para la vista de la aplicación web. Para la base de datos se 
+                                utilizó MySQL.
+                            </li>
+                            <li>
+                                Las pruebas se realizaron en un ambiente de desarrollo y finalmente se uso
+                                potenciales clientes reales.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="works_card">
+                    <img src="../static/python-django-2.png" alt="python_django_logo">
+                    <h2>Desarrollador Backend.</h2>
+                    <div>
+                        <ul class="detail_list">
+                            <li>
+                                Mi principal trabajo fue desarrollar funcionalidades varias para la API
+                                utilizada como backend, entre las mas importantes se puede destacar la 
+                                creación del panel de administrador, el cual no solo permitia el manejo
+                                de los datos almacenados en la base de datos, sino que tambien entregaba
+                                metricas que ayudaban a la toma de decisiones.
+                            </li>
+                            <li>
+                                Otras tareas importantes fue la integración de apis tales como Webpay 
+                                (pasarela de pago), Zoom (para agendar reuniones), Whatsapp (envio 
+                                automático de mensajes), Chatopenai (para consultas varias) y Microsoft 
+                                (envio automático de correos).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="works_card">
+                    <img src="../static/python.png" alt="python_logo">
+                    <h2>Trabajos varios.</h2>
+                    <div>
+                        <ul class="detail_list">
+                            <li>
+                                He realizado varios trabajos por mi cuenta utilizando Python
+                                y sus librerias como herramienta principal. Algunas librerias que 
+                                he utilizado son: BeautifulSoup (webscrapping), pandas (analisis de 
+                                datos), opencv (para el manejo de una camara web con python).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contactEs" class="container">
+            <div class="contact_form">
+                <div class="contact_side">
+                    <h1 class="contact_text text">Contáctame</h1>
+                    <br>
+                    <div class="contact_info">
+                        <img src="../static/message_icon.png" alt="message_logo">
+                        <p>seba.ramirez.ramos@gmail.com</p>
+                    </div>
+                    <div class="contact_info">
+                        <img src="../static/smart_icon.png" alt="smart_phone_logo">
+                        <p>+56 9 99521264</p>
+                    </div>
+                    <div class="contact_links">
+                        <p><strong>Mis redes</p>
+                        <a href="https://www.linkedin.com/in/sebastian-ramirez-ramos/" target="_blank"><img src="../static/linkedin_icon.png" alt="linkedin_logo"></a>
+                        <a href="https://www.github.com/SebaRR" target="_blank"><img src="../static/github_icon.png" alt="github_logo"></a>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="download_button">
+                        <a href="../static/CV-0523.pdf" download>Descargar CV</a>
+                    </div>
+                </div>
+                <div>
+                    <form method="post" class="form_style">
+                        {% csrf_token %}
+                        <div class="form_line">
+                            <input type="text" id="name" name="name" placeholder="Nombre" class="form_input">
+                            <div class="underline"></div>
+                        </div>
+                        <div class="form_line">
+                            <input type="email" id="email" name="email" placeholder="Correo" class="form_input">
+                            <div class="underline"></div>
+                        </div>
+                        <div class="form_line">
+                            <input type="text" id="message" name="message" placeholder="Mensaje" class="form_input message">
+                            <div class="underline"></div>
+                        </div>
+                        <div class="button_style">
+                            <button type="submit"><strong>Enviar</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="idioma-en" style="display: none;">
+        <div id="header" class="container">
+            <div class="header-container inmovil">
+                <div class="logo">
+                    <img src="../static/tipo3.PNG" alt="logo">
+                </div>
+                <div class="len_button">
+                    <button id="changeEs">Cambiar a Español</button>
+                </div>
+                <div class="div-list">
+                    <ul class="h-list">
+                        <li><a href="#header" class="no-change-color">Home</a></li>
+                        <li><a href="#about" class="no-change-color">About</a></li>
+                        <li><a href="#works" class="no-change-color">Portfolio</a></li>
+                        <li><a href="#contact" class="no-change-color">Contact</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="img-python">
+                <div class="style-text">
+                    <p class="text "> Backend Developer </p>
+                    <h1 class="text-me"> Hi, I'm <strong class="name_style">Sebastian</strong> <br> <strong class="name_style">Ramirez</strong> from Chile... </h1>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="container">
+            <div>
+                <div class="row">
+                    <div class="image">
+                        <img class="imcontainer" src="../static/perfil.jpg" alt="profile pic">
+                    </div>
+                    <div class="about_me">
+                        <h1>About Me </h1>
+                        <p class="about_me_text"> 
+                            I am a passionate web developer graduated in 2020, with more than 2 years of experience creating robust and efficient solutions.
+                            My main focus is Backend development, and my specialty lies in using the Django framework, along with a diverse set of complementary technologies.
+                        </p>
+                        <p class="about_me_text">
+                            During my career, I have consolidated skills that define me as a tireless and persistent worker. My focus on managing small projects has allowed me
+                            demonstrate my skills in programming in Python and Java, always maintaining high standards of quality and efficiency. My skills extend to driving
+                            Database expertise, including PostgreSQL and MySql, as well as fluency in version control using GitHub.
+                        </p>
+                        <p class="about_me_text">
+                            My inexhaustible energy and self-taught nature constantly push me to explore new possibilities and take on challenges with determination.
+                            Not only do I excel as a solo entrepreneur, but I also possess the ability to foster the formation of highly collaborative teams.
+                            My ability to remain calm in stressful situations is a valuable resource in ensuring that goals are met within tight deadlines.
+                        </p>
+                        <p class="about_me_text">
+                            I am looking for an environment where I can continue cultivating my professional growth, contributing both my current experience and my tireless desire for continuous learning and improvement.
+                            My primary goal is to make a meaningful contribution to the team and provide solutions that transcend conventional boundaries.
+                        </p>
+                        <div class="row_tabs">
+                            <p class="space_tabs"><a onclick="showTab('skills')" class="tab active"><strong>Skills</strong></a></p>
+                            <p class="space_tabs"><a onclick="showTab('experience')"  class="tab"><strong>Experience</strong></a></p>
+                            <p class="space_tabs"><a onclick="showTab('education')" class="tab"><strong>Education</strong></a></p>
+                        </div>
+                        <div id="skills" class="tab-content" style="display: block;">
+                            <ul class="">
+                                <li><p> Django </p></li>
+                                <li><p> Python </p></li>
+                                <li><p> MySql </p></li>
+                                <li><p> PostgreSQL </p></li>
+                                <li><p> Html - CSS </p></li>
+                            </ul>
+                        </div>
+                        <div id="experience" class="tab-content">
+                            <h3>Web Developer.  | <strong>Conectapi.</strong> Santiago, Chile</h3>
+                            <p>Complete development of a marketplace-type web solution, defining the
+                                architecture, models and technologies to use. The framework Django was used,
+                                MySQL as a database, among others
+                            </p>
+                            <h3>Backend Developer. | <strong>TeNecesito.</strong> Santiago, Chile</h3>
+                            <p>Backend development of an existing application, REST API type, using the
+                                Django framework, PostgreSQL database. Some relevant tasks
+                                were: integration with other APIs, database management and creation
+                                of new functionalities</p>
+
+                        </div>
+                        <div id="education" class="tab-content">
+                            <h3>1. Degree in engineering sciences</h3>
+                            <p>
+                                Pontificia Universidad Catolica de Valparaiso | Mar 2014 - Mar 2019
+                            </p>
+                            <h3>2. Civil Engineer in Computer Science</h3>
+                            <p>
+                                Pontificia Universidad Catolica de Valparaiso | Mar 2014 - Dec 2020
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="works" class="container">
+            <div class="works_list">
+                <div class="works_card">
+                    <img src="../static/python-django-2.png" alt="python_django_logo">
+                    <h2>Web Developer.</h2>
+                    <div>
+                        <ul class="detail_list">
+                            <li>
+                                I was involved in the planning of the project, for this I used
+                                the development time estimation technique based on
+                                in Use Cases. From this, the decision was made about which technologies
+                                would be used for development.
+                            </li>
+                            <li>
+                                Throughout the development, Django was used for the backend.
+                                and Html-Css for the web application view. For the database
+                                used MySQL.
+                            </li>
+                            <li>
+                                The tests were carried out in a development environment and finally it was used
+                                actual potential customers.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="works_card">
+                    <img src="../static/python-django-2.png" alt="python_django_logo">
+                    <h2>Backend Developer.</h2>
+                    <div>
+                        <ul class="detail_list">
+                            <li>
+                                My main job was to develop various features for the API
+                                used as backend, among the most important we can highlight the
+                                creation of the administrator panel, which not only allowed the management
+                                of the data stored in the database, but also delivered
+                                Metrics that help decision making.
+                            </li>
+                            <li>
+                                Other important tasks were the integration of APIs such as Webpay
+                                (payment gateway), Zoom (to schedule meetings), Whatsapp (send
+                                automatic messages), Chatopenai (for various queries) and Microsoft
+                                (automatic mail delivery).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="works_card">
+                    <img src="../static/python.png" alt="python_logo">
+                    <h2>Other works.</h2>
+                    <div>
+                        <ul class="detail_list">
+                            <li>
+                                I have done several jobs on my own using Python
+                                and its libraries as the main tool. Some bookstores that
+                                I have used are: BeautifulSoup (webscrapping), pandas (analysis of
+                                data), opencv (for handling a webcam with python).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="container">
+            <div class="contact_form">
+                <div class="contact_side">
+                    <h1 class="contact_text text">Contact me</h1>
+                    <br>
+                    <div class="contact_info">
+                        <img src="../static/message_icon.png" alt="message_logo">
+                        <p>seba.ramirez.ramos@gmail.com</p>
+                    </div>
+                    <div class="contact_info">
+                        <img src="../static/smart_icon.png" alt="smart_phone_logo">
+                        <p>+56 9 99521264</p>
+                    </div>
+                    <div class="contact_links">
+                        <p><strong>Social Networks</p>
+                        <a href="https://www.linkedin.com/in/sebastian-ramirez-ramos/" target="_blank"><img src="../static/linkedin_icon.png" alt="linkedin_logo"></a>
+                        <a href="https://www.github.com/SebaRR" target="_blank"><img src="../static/github_icon.png" alt="github_logo"></a>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="download_button">
+                        <a href="../static/CV-0523.pdf" download>Download CV</a>
+                    </div>
+                </div>
+                <div>
+                    <form method="post" class="form_style">
+                        {% csrf_token %}
+                        <div class="form_line">
+                            <input type="text" id="name" name="name" placeholder="Name" class="form_input">
+                            <div class="underline"></div>
+                        </div>
+                        <div class="form_line">
+                            <input type="email" id="email" name="email" placeholder="Email" class="form_input">
+                            <div class="underline"></div>
+                        </div>
+                        <div class="form_line">
+                            <input type="text" id="message" name="message" placeholder="Message" class="form_input message">
+                            <div class="underline"></div>
+                        </div>
+                        <div class="button_style">
+                            <button type="submit">Sent mail</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const idiomaEs = document.querySelector(".idioma-es");
+            const idiomaEn = document.querySelector(".idioma-en");
+            const cambiarIdioma = document.getElementById("changeEs");
+        
+            cambiarIdioma.addEventListener("click", function() {
+                    idiomaEs.style.display = "block";
+                    idiomaEn.style.display = "none";
+                
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const idiomaEs = document.querySelector(".idioma-es");
+            const idiomaEn = document.querySelector(".idioma-en");
+            const cambiarIdioma = document.getElementById("changeEn");
+        
+            cambiarIdioma.addEventListener("click", function() {
+                    idiomaEs.style.display = "none";
+                    idiomaEn.style.display = "block";
+            });
+        });
+    </script>
+    <script>
+        function showTab(tabName) {
+            // Oculta todas las tablas de contenido
+            const tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach((tab) => {
+                tab.style.display = "none";
+            });
+
+            // Muestra la tabla de contenido seleccionada
+            const selectedTab = document.getElementById(tabName);
+            if (selectedTab) {
+                selectedTab.style.display = "block";
+            }
+
+            const tabs = document.querySelectorAll(".tab");
+            tabs.forEach((tab) => {
+                tab.classList.remove("active");
+            });
+
+            const clickedTab = document.querySelector(`[onclick="showTab('${tabName}')"]`);
+            if (clickedTab) {
+                clickedTab.classList.add("active");
+            }
+        }
+    </script>
+</body>
+</html>
+
