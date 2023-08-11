@@ -1,9 +1,10 @@
 {% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Portafolio</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% staticfiles 'styles.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +13,7 @@
         <div id="headerEs" class="container">
             <div class="header-container inmovil">
                 <div class="logo">
-                    <img src="../static/tipo3.PNG" alt="logo">
+                    <img src="../staticfiles/tipo3.PNG" alt="logo">
                 </div>
                 <div class="len_button">
                     <button id="changeEn">Change to English</button>
@@ -39,7 +40,7 @@
             <div>
                 <div class="row">
                     <div class="image">
-                        <img class="imcontainer" src="../static/perfil.jpg" alt="profile pic">
+                        <img class="imcontainer" src="../staticfiles/perfil.jpg" alt="profile pic">
                     </div>
                     <div class="about_me">
                         <h1>Acerca de mí </h1>
