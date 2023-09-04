@@ -422,3 +422,24 @@ a.no-change-color:active {
     background: #e31b59;
     transform: translateY(-10px);
 }
+
+.alert {
+    padding: 20px;
+    background-color: #04AA6D;
+    color: white;
+}
+  
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.closebtn:hover {
+color: #FFCB74;
+}

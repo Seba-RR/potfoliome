@@ -22,7 +22,9 @@ def contact_view(request):
                 ['seba.ramirez.ramos@gmail.com',],  
                 fail_silently=False,
             )
-            return redirect('home')
+            request.session['email_sent'] = True
+            return redirect('home', )
         else:
+            request.session['email_sent'] = False
             print("Correo no enviando")
     return render(request, 'home.html', context)
