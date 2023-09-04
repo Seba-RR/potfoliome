@@ -427,6 +427,7 @@ a.no-change-color:active {
     padding: 20px;
     background-color: #04AA6D;
     color: white;
+    border-radius:10px;
 }
   
 .closebtn {
